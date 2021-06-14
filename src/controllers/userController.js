@@ -41,7 +41,16 @@ module.exports = {
 
     show:  async (req, res) => {
         await db.User.findByPk(req.params.id, {
-            attributes: ["id", 'firstName', 'lastName', "email", "avatar"] 
+            attributes: [
+                "id", 
+                'firstName', 
+                'lastName', 
+                "email", 
+                "role", 
+                "avatar", 
+                "updatedAt", 
+                "createdAt"
+            ]
         })
         .then((user) =>{
             user.avatar = `${PATH_URL_AVATAR}${user.avatar}`; 

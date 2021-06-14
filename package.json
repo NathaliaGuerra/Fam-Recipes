@@ -1,7 +1,7 @@
 {
   "name": "fam-recipes",
   "version": "1.0.0",
-  "description": "",
+  "description": "Family Recipes",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/NathaliaGuerra/Fam-Recipes.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nathalia Guerra, Juan Carlos Guerra",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NathaliaGuerra/Fam-Recipes/issues"
@@ -24,7 +24,11 @@
     "express": "^4.17.1",
     "faker": "^5.5.3",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.6.2"
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.6.2",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.7",

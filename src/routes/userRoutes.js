@@ -8,4 +8,11 @@ router.get(
     userController.index
 );
 
+router.get(
+    '/:id',
+    async (req, res) => {
+        userController.show(req, res)
+    }
+);
+
 module.exports = router;
